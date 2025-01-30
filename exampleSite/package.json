@@ -1,18 +1,21 @@
 {
-  "name": "pehtheme",
+  "name": "pehtheme-simple",
   "version": "1.0.0",
   "description": "An open-source Hugo theme lovingly crafted using Tailwind CSS.",
   "main": "index.js",
   "scripts": {
-    "dev:generate": "npx tailwindcss -i ./assets/input.css -o ./themes/pehtheme-hugo/assets/css/main.css -w",
+    "dev:generate": "npx tailwindcss -i ./assets/input.css -o ./themes/pehtheme-simple-hugo/assets/css/main.css -w",
     "dev:hugo": "hugo server",
     "dev": "run-p dev:*",
-    "build:generate": "npx tailwindcss -i ./assets/input.css -o ./themes/pehtheme/static/assets/css/main.css",
+    "build:generate": "npx tailwindcss -i ./assets/input.css -o ./themes/pehtheme-simple-hugo/static/assets/css/main.css --minify",
     "build:hugo": "hugo",
     "build": "run-p build:*"
   },
-  "keywords": ["hugo", "tailwindcss"],
-  "author": "Fauzan My",
+  "keywords": [
+    "hugo",
+    "tailwindcss"
+  ],
+  "author": "Jacob Horton",
   "license": "MIT",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",

@@ -1,13 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-      "content/**/*.md",
-      "./themes/pehtheme-hugo/**/*.{html,js}"
-    ],
+  content: ["content/**/*.md", "./**/*.{html,js}"],
   theme: {
     extend: {},
   },
-  plugins: [
-    require('@tailwindcss/typography')
-    ],
-}
+  plugins: [require("@tailwindcss/typography")],
+};
+
